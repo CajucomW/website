@@ -1,22 +1,26 @@
 .App {
-  text-align: center;
+  background: whitesmoke;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.FixedTop {
+  background-color: #78c7cc;
+  font-family: "Quattrocento Sans", "Montserrat";
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
-.App-link {
-  color: #09d3ac;
+h1 {
+  color: antiquewhite;
+  padding-left: 10vw;
+}
+
+.App-navBar {
+  color: whitesmoke;
+  font-size: 37px;
+  margin-left: 40vw;
+  display: flex;
 }
