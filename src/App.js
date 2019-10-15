@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './App.css';
+
 import NavBar from './components/NavBar/NavBar.js';
+import About from './components/About/About.js';
+
 
 // function App() {
 class App extends Component {
@@ -15,6 +19,13 @@ class App extends Component {
           <div className="App-navBar">
             <NavBar />
           </div>
+
+          <div className="App-mainContent">
+            <BrowserRouter>
+              <Route exact path='/' component={About} />
+            </BrowserRouter>
+          </div>
+
         </div>
       </div>
     );
