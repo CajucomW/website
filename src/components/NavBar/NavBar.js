@@ -5,7 +5,10 @@ class NavBar extends Component {
     render() {
         return (
             <div className="NavBarStyle">
-                tabs
+                about
+                tech
+                jiujitsu
+                pta
             </div>
         )
     }
