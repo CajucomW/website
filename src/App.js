@@ -20,13 +20,14 @@ class App extends Component {
             <NavBar />
           </div>
 
-          <div className="App-mainContent">
+        </div>
+        
+        <div className="App-mainContent">
             <BrowserRouter>
               <Route exact path='/' component={About} />
             </BrowserRouter>
           </div>
-
-        </div>
+          
       </div>
     );
   }

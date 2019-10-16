@@ -24,3 +24,8 @@ h1 {
   margin-left: 50vw;
   display: flex;
 }
+
+.App-mainContent {
+  margin-top: 8vh;
+  padding: 10px 140px 10px 140px;
+}
