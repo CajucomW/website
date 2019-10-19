@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
+
 import './App.css';
 
 import NavBar from './components/NavBar/NavBar.js';
@@ -29,9 +30,9 @@ class App extends Component {
           <BrowserRouter>
             <Switch>
               <Route exact path='/' component={About} />
-              <Route exact path='/Tech' component={Tech} />
-              <Route exact path='/Jiujitsu' component={JiuJitsu} />
-              <Route exact path='/PTA' component={PTA} />
+              <Route exact path='/tech/' component={Tech} />
+              <Route exact path='/jiujitsu/' component={JiuJitsu} />
+              <Route exact path='/PTA/' component={PTA} />
             </Switch>
           </BrowserRouter>
           </div>

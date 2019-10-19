@@ -7,10 +7,10 @@ class NavBar extends Component {
         return (
             <div className="NavBarStyle">
                 <BrowserRouter>
-                    <Link to="/" className="LinkStyle">About</Link>
-                    <Link to="/Tech" className="LinkStyle">Tech</Link>
-                    <Link to="/Jiujitsu" className="LinkStyle">JiuJitsu</Link>
-                    <Link to="/PTA" className="LinkStyle">PTA</Link>
+                    <Link className="LinkStyle" to={"/"}>About</Link>
+                    <Link className="LinkStyle" to={"/tech/"}>Tech</Link>
+                    <Link className="LinkStyle" to="/jiujitsu/">JiuJitsu</Link>
+                    <Link className="LinkStyle" to="/PTA/">PTA</Link>
                 </BrowserRouter>
             </div>
         )
