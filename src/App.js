@@ -4,6 +4,9 @@ import './App.css';
 
 import NavBar from './components/NavBar/NavBar.js';
 import About from './components/About/About.js';
+import Tech from './components/Tech/Tech.js';
+import JiuJitsu from './components/Jiujitsu/Jiujitsu.js';
+import PTA from './components/PTA/PTA.js';
 
 
 // function App() {
@@ -25,6 +28,9 @@ class App extends Component {
         <div className="App-mainContent">
             <BrowserRouter>
               <Route exact path='/' component={About} />
+              <Route exact path='/tech' component={Tech} />
+              <Route exact path='/jiujitsu' component={JiuJitsu} />
+              <Route exact path='/pta' component={PTA} />
             </BrowserRouter>
           </div>
           

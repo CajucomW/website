@@ -7,12 +7,11 @@ class NavBar extends Component {
         return (
             <div className="NavBarStyle">
                 <BrowserRouter>
-                    <Link to="/">About</Link>
+                    <Link to="/" className="LinkStyle">About</Link>
+                    <Link to="/tech" className="LinkStyle">Tech</Link>
+                    <Link to="/jiujitsu" className="LinkStyle">JiuJitsu</Link>
+                    <Link to="/pta" className="LinkStyle">PTA</Link>
                 </BrowserRouter>
-                
-                tech
-                jiujitsu
-                pta
             </div>
         )
     }

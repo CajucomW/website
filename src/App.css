@@ -21,11 +21,12 @@ h1 {
 .App-navBar {
   color: whitesmoke;
   font-size: 37px;
-  margin-left: 50vw;
+  margin-left: auto;
+  margin-right: 10vw;
   display: flex;
 }
 
 .App-mainContent {
   margin-top: 8vh;
-  padding: 10px 140px 10px 140px;
+  padding: 3vw 18vw 10px 10vw;
 }

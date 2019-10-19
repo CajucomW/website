@@ -4,3 +4,10 @@
     font-family: "Quattrocento Sans", "Montserrat";
     padding-top: 4vh;
 }
+
+.LinkStyle {
+    color: whitesmoke;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 25px;
+}
