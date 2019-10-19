@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Tech.css';
 
+import './Tech.css';
 class Tech extends Component {
     render() {
         return (

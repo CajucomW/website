@@ -8,9 +8,9 @@ class NavBar extends Component {
             <div className="NavBarStyle">
                 <BrowserRouter>
                     <Link to="/" className="LinkStyle">About</Link>
-                    <Link to="/tech" className="LinkStyle">Tech</Link>
-                    <Link to="/jiujitsu" className="LinkStyle">JiuJitsu</Link>
-                    <Link to="/pta" className="LinkStyle">PTA</Link>
+                    <Link to="/Tech" className="LinkStyle">Tech</Link>
+                    <Link to="/Jiujitsu" className="LinkStyle">JiuJitsu</Link>
+                    <Link to="/PTA" className="LinkStyle">PTA</Link>
                 </BrowserRouter>
             </div>
         )
