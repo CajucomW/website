@@ -7,6 +7,7 @@ import About from './components/About/About.js';
 import Tech from './components/Tech/Tech.js';
 import JiuJitsu from './components/Jiujitsu/Jiujitsu.js';
 import PTA from './components/PTA/PTA.js';
+import Footer from './components/Footer/Footer.js';
 
 class App extends Component {
   render() {
@@ -24,15 +25,17 @@ class App extends Component {
         </div>
         
         <div className="App-mainContent">
-          {/* <BrowserRouter> */}
             <Switch>
               <Route exact path='/' component={About} />
               <Route exact path='/tech/' component={Tech} />
               <Route exact path='/jiujitsu/' component={JiuJitsu} />
               <Route exact path='/PTA/' component={PTA} />
             </Switch>
-          {/* </BrowserRouter> */}
           </div>
+          
+        <div className="Footer">
+            <Footer />
+        </div>
           
       </div>
     );

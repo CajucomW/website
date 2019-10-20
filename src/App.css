@@ -30,3 +30,13 @@ h1 {
   margin-top: 8vh;
   padding: 3vw 18vw 10px 10vw;
 }
+
+.Footer {
+  background-color: #78c7cc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
