@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-// import instagram from '../../logos/instagram.svg';
+import instagram from '../../logos/instagram.svg';
+import twitter from '../../logos/twitter.svg';
+import linkedin from '../../logos/linkedin.svg';
+import github from '../../logos/github.svg';
 
 import './Footer.css';
 class Footer extends Component {
@@ -7,10 +10,18 @@ class Footer extends Component {
         return (
             <div className="FooterStyle">
                 <a target="_blank" href="https://www.instagram.com/fatwence/">
-                    {/* <img src={instagram} className="Instagram-logo" alt="instagram logo" /> */}
-                    <i className="icon-social-instagram" alt="instagram logo" />
+                    <img src={instagram} className="Logo-size" alt="instagram logo" />
                 </a>
-            </div>
+                <a target="_blank" href="https://www.instagram.com/fatwence/">
+                    <img src={twitter} className="Logo-size" alt="twitter logo" />
+                </a>
+                 <a target="_blank" href="https://www.instagram.com/fatwence/">
+                    <img src={linkedin} className="Logo-size" alt="Linkedin logo" />
+                </a>
+                 <a target="_blank" href="https://www.instagram.com/fatwence/">
+                    <img src={github} className="Logo-size" alt="github logo" />
+                </a>
+             </div>
 
         )
     }
