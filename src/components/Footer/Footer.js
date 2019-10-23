@@ -12,13 +12,13 @@ class Footer extends Component {
                 <a target="_blank" href="https://www.instagram.com/fatwence/">
                     <img src={instagram} className="Logo-size" alt="instagram logo" />
                 </a>
-                <a target="_blank" href="https://www.instagram.com/fatwence/">
+                <a target="_blank" href="https://twitter.com/CajucomW">
                     <img src={twitter} className="Logo-size" alt="twitter logo" />
                 </a>
-                 <a target="_blank" href="https://www.instagram.com/fatwence/">
+                 <a target="_blank" href="https://www.linkedin.com/in/wence-cajucom-429667187/">
                     <img src={linkedin} className="Logo-size" alt="Linkedin logo" />
                 </a>
-                 <a target="_blank" href="https://www.instagram.com/fatwence/">
+                 <a target="_blank" href="https://github.com/CajucomW">
                     <img src={github} className="Logo-size" alt="github logo" />
                 </a>
              </div>
