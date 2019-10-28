@@ -11,17 +11,18 @@ class Tech extends Component {
         content: 'Content Goes Here',
     }
 
-    // componentDidMount() {
-    //     console.log('working...');
-    //     fetch('api/all')
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             console.log('did data come back?', data);
-    //             this.setState({
-    //                 blogPosts: data.posts,
-    //             });
-    //         });
-    // }
+    componentDidMount() {
+        console.log('working...');
+        const url = '127.0.0.1:8000/api/?format=api'
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log('did data come back?', data);
+                this.setState({
+                    blogPosts: data.posts,
+                });
+            });
+    }
 
     render() {
         return (
