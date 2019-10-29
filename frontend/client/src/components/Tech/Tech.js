@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Tech.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 
 import Article from '../Article/Article.js';
@@ -12,17 +13,27 @@ class Tech extends Component {
     }
 
     componentDidMount() {
-        console.log('working...');
-        const url = '127.0.0.1:8000/api/?format=api'
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                console.log('did data come back?', data);
+        console.log('axios working...');
+        axios.get('http://127.0.0.1:8000/api/')
+            .then(response => {
                 this.setState({
-                    blogPosts: data.posts,
+                    title: response.data.title,
+                    content: response.data.content,
                 });
-            });
+            },
     }
+
+    // componentDidMount() {
+    //     console.log('working...');
+    //     fetch('http://127.0.0.1:8000/api/')
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             console.log('did data come back?', data);
+    //             this.setState({
+    //                 blogPosts: data.posts,
+    //             });
+    //         });
+    // }
 
     render() {
         return (
