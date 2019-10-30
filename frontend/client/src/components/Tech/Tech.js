@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 // import axios from 'axios';
 
 
-import Article from '../Article/Article.js';
+// import Article from '../Article/Article.js';
 
 class Tech extends Component {
     state = {
-        title: 'Blog Title',
-        content: 'Content Goes Here'
-    };
+        title: '',
+        content: '',
+    }
+
 
     // componentDidMount() {
     //     console.log('axios working...');
@@ -25,14 +26,17 @@ class Tech extends Component {
 
     componentDidMount() {
         console.log('working...');
-        fetch('http://127.0.0.1:8000/api/')
+        fetch('http://127.0.0.1:8000/api/?format=json')
             .then(response => response.json())
             .then(data => {
-                console.log('did data come back?', data);
+                console.log('did data come back?', data[0]);
+                let article = data[0]
+
                 this.setState({
-                    title: data.title,
-                    content: data.content,
+                    title: article.title,
+                    content: article.content
                 });
+                console.log('title and content?')
             });
     }
 
@@ -42,8 +46,8 @@ class Tech extends Component {
                 <h2>Wence Cajucom</h2>
                 <p>full stack developer</p>
                 <p>(...in training)</p>
-                <h3>{this.state.title}</h3>
-                <p>{this.state.content}</p>
+                <h3>Title is supposed to go here: {this.state.title}</h3>
+                <p>Content is supposed to go here:  {this.state.content}</p>
             </div>
         );
     }
