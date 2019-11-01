@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // import axios from 'axios';
 
 
-// import Article from '../Article/Article.js';
+import Article from '../Article/Article.js';
 
 class Tech extends Component {
     state = {
@@ -26,10 +26,10 @@ class Tech extends Component {
 
     componentDidMount() {
         console.log('working...');
-        fetch('http://127.0.0.1:8000/api/?format=json')
+        fetch('http://127.0.0.1:8000/api/')
             .then(response => response.json())
             .then(data => {
-                console.log('did data come back?', data[0]);
+                console.log('did data come back?', data);
                 let article = data[0]
 
                 this.setState({
@@ -46,8 +46,21 @@ class Tech extends Component {
                 <h2>Wence Cajucom</h2>
                 <p>full stack developer</p>
                 <p>(...in training)</p>
+
+                
                 <h3>Title is supposed to go here: {this.state.title}</h3>
                 <p>Content is supposed to go here:  {this.state.content}</p>
+
+
+                {/* <div className="TechBlog">
+                    {
+                        this.state.article.map(article => (
+                            <Article
+                                title={article.title}
+                                content={article.content} />
+                        ))
+                    }
+                </div> */}
             </div>
         );
     }
