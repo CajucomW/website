@@ -6,25 +6,17 @@ class About extends Component {
         return (
             <div className="AboutStyle">
                 <h2>hi! I'm Wence</h2>
-                <p>I'm a Dreamer looking for new ways to learn and create.
-                    </p>
-                <p>As a healthcare professional , I have dedicated the last six 
-                    years training and educating those in need through physical 
-                    rehabilitation to help them recover and maintain their 
-                    quality of life.
-                    </p>
-                <p>Having a penchant for teaching had made it's way into my 
-                    favorite pastime, where I share my passion for the art of 
-                    Brazilian Jiu-jitsu.
-                    </p>
-                <p>I recently started a crash course in web development/programming 
-                    and I know that this process will be one of the most difficult 
-                    projects I will undertake. I couldn't be more excited! This 
-                    space is, and will be, a work in progress . Having said that, 
-                    a 'comments' section is not ready yet. In the meantime, I can 
-                    be reached here for comments, advice, or just to say 'hi' back. 
-                    Hope to year from you!
-                    </p>
+                <p>This space is a work in progress. It's a place where
+                    I'll be practicing and applying things I learned in my 
+                    four-month bootcamp. This app itself is based on a project
+                    from that class -
+                    <a href="http://www.wencecajucom.com" target="_blank">
+                        wencecajucom.com
+                        </a>
+                    , which is a solo project using django framework. I'll
+                    be "reactifying" that project, which has really been kicking
+                    my but since I've learned about javascript library.
+                </p>
             </div>
         )
     }

@@ -5,11 +5,9 @@ class Article extends Component {
   render() {
     return (
       <div className="Article">
-        <img src={this.props.image} className="Article-image" alt="allergy img" />
-        <h2 className="Article-title">{this.props.title}</h2>
-        <div className="Article-summary">
-          {this.props.children}
-        </div>
+        <h3>{this.props.title}</h3>
+
+        <p>{this.props.content}</p>
       </div>
     );
   }
